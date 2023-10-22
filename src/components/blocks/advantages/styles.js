@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Title from "/src/components/ui/title/title";
-import { Li, Ul } from "/src/components/styled/index";
+import Title from "../../ui/title/title";
+import { Li, Ul } from "../../styled/index";
 
 export const StyledAdvantages = styled.section`
   .main-advantages {

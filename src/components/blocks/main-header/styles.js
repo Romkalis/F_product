@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import farmer from "/src/assets/farmer.svg";
+import farmer from "../../../assets/farmer.svg";
 
 export const StyledSection = styled.section`
   background-color: #d8ecfe;

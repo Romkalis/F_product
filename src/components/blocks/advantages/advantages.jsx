@@ -5,9 +5,9 @@ import {
   AdvantagesList,
   AdvantageItem
 } from "./styles.js";
-import AdvantageCard from "/src/components/ui/advantage-card/advantage-card";
-import Button from "/src/components/ui/button/button";
-import PageWrapper from "/src/components/layout/page-wrapper/page-wrapper";
+import AdvantageCard from "../../ui/advantage-card/advantage-card";
+import Button from "../../ui/button/button";
+import PageWrapper from "../../layout/page-wrapper/page-wrapper";
 
 function Advantages({ advantages }) {
   return (

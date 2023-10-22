@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledLogo, Text } from "./styles.js";
-import { ReactComponent as LogoImage } from "/src/assets/logo.svg";
+import { ReactComponent as LogoImage } from "../../../assets/logo.svg";
 
 function Logo() {
   return (

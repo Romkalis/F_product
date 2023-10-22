@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledSection, Description, Text } from "./styles.js";
-import Title, { TitleSize } from "/src/components/ui/title/title";
+import Title, { TitleSize } from "../../ui/title/title";
 
 function MainHeader() {
   return (
