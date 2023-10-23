@@ -31,6 +31,7 @@ export const StyledButton = styled.a`
   &:active {
     background-color: ${(props) => props.theme.colorButtonHover};
     box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.14);
+    color: yellow;
   }
 
   &:active {

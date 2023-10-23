@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as LogoImage } from "../../../assets/logo.svg";
 
 export const StyledLogo = styled.a`
   display: flex;

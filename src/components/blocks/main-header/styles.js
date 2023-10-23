@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
   background-color: #d8ecfe;
   width: 100%;
   height: 600px;
-  padding-left: 90px;
+  /* padding-left: 90px; */
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -25,15 +25,17 @@ export const StyledSection = styled.section`
     display: block;
     width: 446px;
     height: 560px;
-    padding-right: 90px;
     margin: auto;
     background-repeat: no-repeat;
+    background-size: contain;
     background-image: url('${farmer}');
+
   }
 `;
 
 export const Description = styled.div`
   padding: 0;
+  padding-left: 90px;
   margin: 0;
   width: 637px;
   z-index: 5;

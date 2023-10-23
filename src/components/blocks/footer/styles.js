@@ -6,10 +6,9 @@ export const StyledFooter = styled.footer`
 `;
 
 export const FooterWrapper = styled.div`
+  width: ${(props) => props.theme.pageWidth};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
   margin: auto;
-  padding: 0 90px;
 `;

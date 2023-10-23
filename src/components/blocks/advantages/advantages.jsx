@@ -7,12 +7,10 @@ import {
 } from "./styles.js";
 import AdvantageCard from "../../ui/advantage-card/advantage-card";
 import Button from "../../ui/button/button";
-import PageWrapper from "../../layout/page-wrapper/page-wrapper";
 
 function Advantages({ advantages }) {
   return (
     <>
-      <PageWrapper>
         <StyledAdvantages className="main-advantages">
           <AdvantageTitle children="Почему фермерские продукты лучше?" />
           {advantages?.length ? (
@@ -35,7 +33,6 @@ function Advantages({ advantages }) {
             <span>НИ ВЫШЛаУ Моковые данные где то потерялись</span>
           )}
         </StyledAdvantages>
-      </PageWrapper>
     </>
   );
 }
