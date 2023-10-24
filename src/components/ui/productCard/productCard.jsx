@@ -7,7 +7,7 @@ import Tabs from '../../blocks/tabs/tabs'
 
 function ProductCard({products}) {
 
-  
+
 
    const productCards = products.map((product) => (
     
@@ -18,8 +18,8 @@ function ProductCard({products}) {
         </div>
         <div className="productDescription">
           <Title>{product.name}</Title>
-          
-          <Tabs  products={products}/> 
+
+          <Tabs  product={product}/> 
         </div>
         
       </StyledCard>

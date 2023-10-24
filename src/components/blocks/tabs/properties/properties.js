@@ -1,9 +1,19 @@
 import React from 'react'
+import {StyledProperties} from './styles'
 
-function Properties () {
+function Properties ({properties}) {
+    console.log(properties)
     return (
         <>
-        Свойства товара
+        <StyledProperties>
+            <b>Энергетическая ценность:</b> {properties.energy}
+
+        </StyledProperties>
+        <StyledProperties>
+            <b>Пищевая ценность:</b> {properties.nutritionalValue}
+
+
+        </StyledProperties>
         </>
     )
 }

@@ -1,7 +1,10 @@
 import React from "react";
 import './styles'
 import { StyledProducts, StyledSection, StyledAside } from "./styles";
+import SideMenu from '../side-menu/side-menu'
+import SideOrder from "../SideOrder/side-order";
 import ProductCard from '../../ui/productCard/productCard'
+
 
 
 const BuyMain = (props) => {
@@ -10,11 +13,11 @@ const BuyMain = (props) => {
         <>
         <StyledSection>
             <StyledAside>
-                <p className="">здесь будет боковое меню</p>
+                <SideMenu {...props}></SideMenu>
+                <SideOrder {...props}></SideOrder>
             </StyledAside>
 
             <StyledProducts>
-                <p className="">здесь будет основной конент</p>
                 <ProductCard {...props}></ProductCard>
             </StyledProducts>
         </StyledSection>

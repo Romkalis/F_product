@@ -4,7 +4,6 @@ export const StyledTabs = styled.div`
 display: flex;
 flex-wrap: wrap;
 gap: 8px;
-
 `
 
 export const TabButton = styled.button`

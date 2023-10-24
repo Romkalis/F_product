@@ -5,25 +5,28 @@ import Description from '../../blocks/tabs/description/description'
 import Character from '../../blocks/tabs/characters/characters'
 import Properties from '../../blocks/tabs/properties/properties'
 
-function Tabs({products}) {
+function Tabs({product}) {
 
   const tabs = [
     {
     title: 'Описание',
-    content: <Description/>
+    content: <Description {...product}/>
   },
   {
     title: 'Характеристики',
-    content: <Character character={products.charachter}/>
+    content: <Character 
+    {...product}
+    />
   },
   {
     title: 'Свойства',
-    content: <Properties properties={products.properties}/>
+    content: <Properties 
+    {...product}
+    />
   },
 ]
 
   const [activeTab, setActiveTab] = useState(0)
-  // console.log(products[activeTab])
 
   return (
   <>
@@ -39,7 +42,7 @@ function Tabs({products}) {
         )
         }
     </StyledTabs>
-    <Content product={products[activeTab]}>{tabs[activeTab].content}</Content>
+    <Content {...product}>{tabs[activeTab].content}</Content>
   </>
 
   );

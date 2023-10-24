@@ -5,16 +5,17 @@ background-color: #f6f6f6;
 display: flex;
 justify-content: space-between;
 flex-direction: row;
+width: 100%;
 
 `
 
 export const StyledAside = styled.div`
-flex: 32;
-border: 2px solid red;
-margin-right: 20px;
+flex: 32%;
+display: flex;
+flex-direction: column;
+gap: 18px;
 `
 export const StyledProducts = styled.div`
-flex: 64;
-border: 2px solid red;
+flex: 64%;
 
 `
