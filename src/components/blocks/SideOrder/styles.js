@@ -32,4 +32,8 @@ margin-bottom: 1.5em;
 
 export const OrderButton = styled(Button)`
 min-width: 100%;
+
+&:disabled {
+  background-color: #f6f6f6;
+}
 `

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.a`
+export const StyledButton = styled.button`
   display: block;
   box-sizing: border-box;
   background-color: ${(props) => props.theme.colorButton};
@@ -36,5 +36,9 @@ export const StyledButton = styled.a`
 
   &:active {
     box-shadow: none;
+  }
+
+  &:disabled {
+    background-color: #f3f3f3;
   }
 `;

@@ -3,7 +3,8 @@ import {MenuTitle, ProductsList} from './styles'
 import Checkbox from "./checkbox/checkbox";
 
 
-function SideMenu({products}) {
+function SideMenu({products, isChecked}) {
+    
     return (
         <ProductsList>  
         <MenuTitle>Выберите продукты</MenuTitle>
@@ -13,7 +14,7 @@ function SideMenu({products}) {
             products.map((product) => {
 
                 return (
-                     <Checkbox price={product.description.price}>{product.name}</Checkbox>
+                     <Checkbox price={product.description.price} isChecked={isChecked}>{product.name}</Checkbox>
                 )
             })}
         </ProductsList>

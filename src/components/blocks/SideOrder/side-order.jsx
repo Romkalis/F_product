@@ -1,25 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
+import Price from './price/price'
 import {OrderBlock, OrderTitle,StyledInput,OrderButton } from './styles'
 
 
-function SideOrder({products}) {
+function SideOrder({price}) {
+    const [adress, setAdress] = useState(null)
+
+
+    
     return (
         <OrderBlock> 
             <OrderTitle>Сделать заказ</OrderTitle>
-            <StyledInput type="text" placeholder="Введите адрес доставки"></StyledInput>
-            <p> Здесь будем считать и выводить цену</p>
-            <OrderButton>Купить</OrderButton>
-        
-        {/* <MenuTitle>Выберите продукты</MenuTitle>
-
-        {products && 
-            products.length &&
-            products.map((product) => {
-
-                return (
-                     <Checkbox price={product.description.price}>{product.name}</Checkbox>
-                )
-            })} */}
+            <StyledInput 
+            type="text" 
+            placeholder="Введите адрес доставки" 
+            value={adress}
+            onChange={(evt) => {
+                setAdress(evt.target.value)
+            } }></StyledInput>
+            <Price>{price}</Price>
+            <OrderButton onClick={() => alert(adress)} disabled={adress ? false : true}>Купить</OrderButton>
+            <button onClick={() => alert(adress)} disabled={adress ? false : true}>default button</button>
         </OrderBlock>
     )
 }

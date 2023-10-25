@@ -33,6 +33,7 @@ export const StyledCheckbox = styled.span`
   height: 1.5em;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #f6f6f6;
+  transition: all 0.5s ease;
 
   &:active,
   &:hover{
