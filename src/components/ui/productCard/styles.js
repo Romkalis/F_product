@@ -27,3 +27,24 @@ export const Image = styled.img`
 export const CardDescription = styled.p`
     text-align: left;
 `
+
+export const ProductsEmpty = styled.div`
+display: flex;
+height: 50%;
+margin: 5em;
+justify-content: center;
+align-items: center;
+border: 5px solid tomato;
+border-radius: 2em;
+`
+
+export const Alert = styled.p`
+color: #333;
+
+/* Body 14px / Regular */
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+`

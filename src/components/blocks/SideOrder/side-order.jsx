@@ -6,7 +6,9 @@ import {OrderBlock, OrderTitle,StyledInput,OrderButton } from './styles'
 function SideOrder({price}) {
     const [adress, setAdress] = useState(null)
 
-
+    const handlerBuy = () => {
+        alert (`Ваш заказ? стиоимостью ${price} собирается и будет доставлен по адресу ${adress}`)
+    }
     
     return (
         <OrderBlock> 
@@ -19,8 +21,8 @@ function SideOrder({price}) {
                 setAdress(evt.target.value)
             } }></StyledInput>
             <Price>{price}</Price>
-            <OrderButton onClick={() => alert(adress)} disabled={adress ? false : true}>Купить</OrderButton>
-            <button onClick={() => alert(adress)} disabled={adress ? false : true}>default button</button>
+            <OrderButton onClick={handlerBuy} disabled={adress ? false : true}>Купить</OrderButton>
+            {/* <button onClick={() => alert(adress)} disabled={adress ? false : true}>default button</button> */}
         </OrderBlock>
     )
 }

@@ -2,7 +2,7 @@
   "name": "farmproducts",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://Romkalis.github.io/F_product",
+  "homepage": "https://Romkalis.github.io/F_product", 
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
