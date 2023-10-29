@@ -8,7 +8,7 @@ import "./style.css";
 function Main(advantages) {
   return (
     <>
-        <Header />
+        <Header button={true} />
         <MainHeader />
         <Advantages {...advantages} />
         <Footer />

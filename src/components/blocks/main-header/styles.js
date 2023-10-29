@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import farmer from "../../../assets/farmer.svg";
 
-export const StyledSection = styled.section`
+export const MainHeaderSectionWrapper = styled.div`
+  width: 100%;
   background-color: #d8ecfe;
+`
+
+export const StyledSection = styled.section`
   width: 100%;
   height: 600px;
   /* padding-left: 90px; */

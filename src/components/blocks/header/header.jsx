@@ -4,12 +4,12 @@ import Nav from "../../layout/nav/nav";
 import PageWrapper from '../../layout/page-wrapper/page-wrapper'
 import { StyledHeader } from "./styles.js";
 
-function Header() {
+function Header(props) {
   return (
     <PageWrapper>
     <StyledHeader className="page-header">
         <Logo />
-        <Nav />
+        <Nav button={props.button ? props.button : null} />
     </StyledHeader>
     </PageWrapper>
 

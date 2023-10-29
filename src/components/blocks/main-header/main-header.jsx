@@ -1,9 +1,10 @@
 import React from "react";
-import { StyledSection, Description, Text } from "./styles.js";
+import { StyledSection, Description, Text, MainHeaderSectionWrapper } from "./styles.js";
 import Title, { TitleSize } from "../../ui/title/title";
 
 function MainHeader() {
   return (
+    <MainHeaderSectionWrapper>
     <StyledSection>
       <Description>
         <Title size={TitleSize.BIG}>
@@ -16,6 +17,7 @@ function MainHeader() {
         </Text>
       </Description>
     </StyledSection>
+    </MainHeaderSectionWrapper>
   );
 }
 

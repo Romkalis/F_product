@@ -2,7 +2,7 @@ const productsData = [
     {
         id: 1,
         src: 'https://media.istockphoto.com/id/1085313230/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D1%8B%D1%80%D1%8B%D0%B5-%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D1%8B%D0%B5-%D0%BD%D0%BE%D0%B6%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=8RPILz3_rWp3Y3tc5ho32Efpn-2PLmJOPt3C0Il2GpU=',
-        name: 'Chicken Legs',
+        name: 'Куриные окорочка',
         
         description: {
         price: 400,
@@ -23,7 +23,7 @@ const productsData = [
     {
         id: 2,
         src: 'https://orel.gostpp.ru/upload/iblock/7ef/3e45e9fvzr3nn2whjbagxh8g61vh8znh.jpg',
-        name: 'Goose Legs',
+        name: 'Бедро гуся',
         description: {
         price: 520,
         weight: 700,

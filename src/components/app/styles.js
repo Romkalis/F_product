@@ -18,7 +18,7 @@ html {
 body {
   position: relative;
   min-height: 100%;
-  font-family: ${(props) => props.theme.fontFamily}
+  font-family: ${(props) => props.theme.fontFamily};
   font-size: ${(props) => props.theme.fontSizeDefault};
   color: ${(props) => props.theme.colorTextDark};
 
