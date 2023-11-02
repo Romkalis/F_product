@@ -49,7 +49,7 @@ export const Text = styled.p`
   margin: 0;
   margin-top: 24px;
   padding: 0;
-  color: {(props) => props.theme.colorTextDark};
+  color: ${(props) => props.theme.colorTextDark};
   font-family: Inter;
   font-size: 18px;
   font-style: normal;

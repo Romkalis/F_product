@@ -9,6 +9,7 @@ function Button({ children, minWidth, link, className, onClick , disabled}) {
       {...(link ? { href: link } : { as: "button", onClick, type: "button" })}
       onClick={onClick}
       disabled={disabled}
+      to={link}
     >
       {children}
     </StyledButton>

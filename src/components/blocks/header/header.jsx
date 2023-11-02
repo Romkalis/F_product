@@ -6,13 +6,11 @@ import { StyledHeader } from "./styles.js";
 
 function Header(props) {
   return (
-    <PageWrapper>
     <StyledHeader className="page-header">
         <Logo />
-        <Nav button={props.button ? props.button : null} />
+        <Nav button={props.button ? props.button : null}/> 
+         {/*   */}
     </StyledHeader>
-    </PageWrapper>
-
   );
 }
 

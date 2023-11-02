@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const StyledNav = styled.nav`
 margin-top: 10px;
@@ -9,7 +10,7 @@ margin-bottom: 10px;
   align-items: center; */
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled(NavLink)`
   display: block;
   box-sizing: border-box;
   background-color: transparent;

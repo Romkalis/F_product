@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled(NavLink)`
   display: block;
   box-sizing: border-box;
   background-color: ${(props) => props.theme.colorButton};
